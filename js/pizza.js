@@ -131,5 +131,5 @@ const myFriends = [
       let median = Math.floor(arr.length / 2);
       return arr[median];
   } 
-console.log(sortedAges)
+
 console.log(`The array length is ${sortedAges.length}. The halfway point is ${Math.floor(sortedAges.length/2)} and the age at that position is ${findMedian(sortedAges)}`)
