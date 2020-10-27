@@ -116,4 +116,5 @@ const sortedAges = ages.sort((a, b) => a - b);
 console.log(sortedAges)
 const mid = Math.ceil(length / 2);
 console.log(mid);
-//const median = sortedAges
+console.log(sortedAges[18]);
+// median = 53
