@@ -1,26 +1,26 @@
 
 
-const friends = [
-    'Moe',
-    'Larry',
-    'Curly',
-    'Jane',
-    'Emma',
-    'Elizabeth',
-    'Elinor',
-    'Mary',
-    'Darcy',
-    'Grey',
-    'Lydia',
-    'Harriet'
-  ];
-// //find last name in array
-const lastName = friends[friends.length - 1];
-console.log(lastName);
+// const friends = [
+//     'Moe',
+//     'Larry',
+//     'Curly',
+//     'Jane',
+//     'Emma',
+//     'Elizabeth',
+//     'Elinor',
+//     'Mary',
+//     'Darcy',
+//     'Grey',
+//     'Lydia',
+//     'Harriet'
+//   ];
+// // //find last name in array
+// const lastName = friends[friends.length - 1];
+// console.log(lastName);
 
-// //sort in alphabetical order
-const alphaOrder = friends.sort();
-console.log(alphaOrder);
+// // //sort in alphabetical order
+// const alphaOrder = friends.sort();
+// console.log(alphaOrder);
 
 // sort in alphabetical order
 var friends = 'Moe,Larry,Curly,Jane,Emma,Elizabeth,Elinor,Mary,Darcy,Grey,Lydia,Harriet';
@@ -28,7 +28,7 @@ var friends = 'Moe,Larry,Curly,Jane,Emma,Elizabeth,Elinor,Mary,Darcy,Grey,Lydia,
 var newArray = friends.split(",");
 console.log(newArray);
 const newAlphabet = newArray.sort();
-console.log(newArray.sort());
+console.log(newAlphabet);
 
 // sort in reverse alphabetical
 const reverse = newAlphabet.reverse();
@@ -88,12 +88,13 @@ const myFriends = [
   ];
 
 const found = foods.findIndex(element => element === 'Pho');
-console.log(found);
+const otherSolution = foods.indexOf('Pho');
+console.log(otherSolution);
 
 //find index of donuts and remove it 
 const donuts = foods.findIndex(element => element === 'Donuts');
 console.log(donuts);
-const removeDonuts = foods.splice(13, 1);
+const removeDonuts = foods.splice(donuts, 1);
 console.log(foods);
 
 //find 5th-10th foods
@@ -102,14 +103,22 @@ console.log(fiveThruTen);
 
 // change space to spice
 let word = "Space";
-if (word === "Space") {
-    let word = "Spice"
-    console.log(word);
-};
+// if (word === "Space") {
+//     let word = "Spice"
+//     console.log(word);
+// };
+word = word.replace('a', 'i')
+console.log(word);
 
 //find median
 
 const ages = [83, 53, 37, 29, 60, 30, 66, 19, 59, 41, 9, 64, 19, 80, 24, 53, 70, 1, 53, 40, 92, 4, 71, 65, 8, 2, 51, 80, 94, 37, 80, 64, 19, 6, 14];
 
-const middle = ages[Math.floor(ages.length / 2)];
-console.log(middle);
+// const middle = ages[Math.floor(ages.length / 2)];
+// console.log(middle);
+// const sortedAges = ages.sort()
+// const medianAge = sortedAges[parseInt(sortedAges.length / 2)]
+// console.log(medianAge);
+const sortedAges = ages.sort()
+const medianAge = sortedAges[parseInt(sortedAges.length / 2)]
+console.log(medianAge);
